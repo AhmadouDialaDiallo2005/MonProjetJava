@@ -1,7 +1,9 @@
 package sn.diallo.l2gl.app.model;
 
 public class Etudiant {
-
+    
+    private static int compteur = 0;
+    
     private String matricule;
     private String nom;
 
@@ -17,6 +19,9 @@ public class Etudiant {
 
         this.matricule = matricule;
         this.nom = nom;
+
+        compteur++;
+        
     }
 
     public Etudiant(String matricule) {
@@ -42,4 +47,15 @@ public class Etudiant {
     public void afficher() {
         System.out.println(matricule + " - " + nom);
     }
+
+    @Override
+    public String toString() {
+        return "Etudiant{matricule=" + matricule +
+                ", nom=" + nom + "}";
+    }
+
+    public static int getCompteur() {
+        return compteur;
+    }
+
 }
