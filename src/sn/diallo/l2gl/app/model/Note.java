@@ -44,7 +44,7 @@ public class Note {
         this.valeur = valeur;
     }
 
-    // 🔥 règle métier
+    
     public double points() {
         return valeur * module.getCoefficient();
     }
