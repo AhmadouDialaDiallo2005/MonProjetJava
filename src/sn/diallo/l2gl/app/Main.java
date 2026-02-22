@@ -29,5 +29,14 @@ public class Main {
 
         Note n2 = new Note(e1, m1, 25);
 
+        System.out.println(e1);
+        System.out.println(m1);
+        System.out.println(n1);
+
+        System.out.println("\nBILAN TD2:");
+        System.out.println("Etudiants créés: " + Etudiant.getCompteur());
+        System.out.println("Dernière note: " + n1.getValeur() + "/20");
+        System.out.println("Points (coeff): " + n1.points());
+
     }
 }
